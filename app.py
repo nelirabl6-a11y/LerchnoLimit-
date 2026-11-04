@@ -12,15 +12,15 @@ import plotly.graph_objects as go
 # SEITENEINSTELLUNGEN
 # --------------------------------------------------
 
+BASE_DIR = Path(__file__).parent
+LOGO_PATH = BASE_DIR / "file_000000006f2c81f5a5097c657e3366d1.png"
+
 st.set_page_config(
     page_title="LerchnoLimit",
-    page_icon="🍄",
+    page_icon=str(LOGO_PATH),
     layout="wide"
 )
 
-BASE_DIR = Path(__file__).parent
-
-LOGO_PATH = BASE_DIR / "file_000000006f2c81f5a5097c657e3366d1.png"
 BACKGROUND_PATH = BASE_DIR / "file_000000006b8081f4bbe2c991f86ba04a.png"
 
 
