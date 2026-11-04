@@ -32,6 +32,7 @@ h1, h2, h3, p, label {
 </style>
 """, unsafe_allow_html=True)
 
+st.image("lerchnolimit_logo.png", width=350)
 st.title("🍄 LerchnoLimit")
 st.subheader("Deine Zukunft. Deine Möglichkeiten.")
 
