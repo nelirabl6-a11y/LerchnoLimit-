@@ -139,7 +139,49 @@ st.markdown(
             min-height: 60vh;
         }}
     }}
-    </style>
+
+/* Pilz-Logo: schwarzer Rahmen und Neon-Verlauf */
+[data-testid="stImage"] img {
+    border: 5px solid #080608;
+    outline: 2px solid #FF4DA6;
+    border-radius: 24px;
+    padding: 5px;
+    background: linear-gradient(
+        135deg,
+        #080608,
+        #351027,
+        #FF4DA6,
+        #080608
+    );
+    box-shadow:
+        0 0 12px rgba(255, 77, 166, 0.65),
+        0 0 32px rgba(255, 77, 166, 0.3);
+}
+
+/* Buttons: sanftes Aufpoppen */
+.stButton > button {
+    transition: all 0.25s ease !important;
+    transform: scale(1);
+}
+
+.stButton > button:hover {
+    transform: scale(1.055) translateY(-3px) !important;
+    box-shadow: 0 0 28px #FF4DA6 !important;
+}
+
+/* Eingabefelder mit sanftem Leuchten */
+.stTextInput input,
+.stNumberInput input {
+    border: 1px solid #FF4DA6 !important;
+    border-radius: 12px !important;
+    transition: box-shadow 0.25s ease;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus {
+    box-shadow: 0 0 15px rgba(255, 77, 166, 0.6) !important;
+}
+</style>
     """,
     unsafe_allow_html=True
 )
